@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Feedback Form";
+}
+
+<div class="container mt-4">
+    <h2>Feedback Management Module</h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            @await Html.PartialAsync("_FeedbackFormPartial", new Practical_7.Models.FeedbackModel())
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
