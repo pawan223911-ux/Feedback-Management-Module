@@ -1,0 +1,9 @@
+@model Practical_7.Models.FeedbackModel
+
+<div class="container mt-4">
+    <div class="alert alert-success">
+        <h2>Thank You, @Model.StudentName!</h2>
+        <p>@ViewBag.Message</p>
+    </div>
+    <a href="@Url.Action("Index", "Feedback")" class="btn btn-secondary">Submit Another Feedback</a>
+</div>
